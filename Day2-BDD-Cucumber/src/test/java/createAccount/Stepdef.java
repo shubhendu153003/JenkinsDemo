@@ -89,7 +89,7 @@ public class Stepdef {
 		
 		Mockito.verify(accountDao).addAccount(account);
 		
-		
+		System.out.println("acc 2 is"+account2);
 		assertNotNull(account2);
 		assertEquals(openingBalance, account2.getOpeningBalance(),0.0);
 		assertEquals(1, account2.getAccountNo());
