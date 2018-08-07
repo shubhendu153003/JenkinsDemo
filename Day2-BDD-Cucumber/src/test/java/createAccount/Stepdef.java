@@ -76,7 +76,7 @@ public class Stepdef {
 		
 		//Fake declaration
 		Account account=new Account();
-		account.setAccountNo(1);
+		account.setAccountNo(2);
 		account.setOpeningBalance(1000);
 		account.setCustomer(customer);
 		
@@ -92,7 +92,7 @@ public class Stepdef {
 		System.out.println("acc 2 is"+account2);
 		assertNotNull(account2);
 		assertEquals(openingBalance, account2.getOpeningBalance(),0.0);
-		assertEquals(1, account2.getAccountNo());
+		assertEquals(2, account2.getAccountNo());
 	}
 
 	
